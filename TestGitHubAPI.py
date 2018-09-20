@@ -25,10 +25,10 @@ class TestGithub(unittest.TestCase):
         self.assertIn('Triangle567',allRepos)
 
     def testNumberCommits_1(self):
-        self.assertGreaterEqual(commitNumber('ctelma','helloworld'),2)
+        self.assertGreaterEqual(CommitNumber('ctelma','helloworld'),2)
 
     def testNumberCommits_2(self):
-        self.assertGreaterEqual(commitNumber('richkempinski','hellogitworld'),30)
+        self.assertGreaterEqual(CommitNumber('richkempinski','hellogitworld'),30)
 
     def testInvalidUsername(self):
         allRepos = RepositoryNames('ctelm')
