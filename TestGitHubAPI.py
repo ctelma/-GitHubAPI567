@@ -17,7 +17,7 @@ class TestGithub(unittest.TestCase):
         self.assertIn('threads-of-life',allRepos)
 
     def testRepository_2(self):
-        allRepos = repoNames('ctelma')
+        allRepos = RepositoryNames('ctelma')
         self.assertGreaterEqual(len(allRepos), 4)
         self.assertIn('GitHubAPI567',allRepos)
         self.assertIn('helloworld',allRepos)
@@ -25,10 +25,10 @@ class TestGithub(unittest.TestCase):
         self.assertIn('Triangle567',allRepos)
 
     def testNumberCommits_1(self):
-        self.assertGreaterEqual(commitNum('ctelma','helloworld'),2)
+        self.assertGreaterEqual(commitNumber('ctelma','helloworld'),2)
 
     def testNumberCommits_2(self):
-        self.assertGreaterEqual(commitNum('richkempinski','hellogitworld'),30)
+        self.assertGreaterEqual(commitNumber('richkempinski','hellogitworld'),30)
 
     def testInvalidUsername(self):
         allRepos = RepositoryNames('ctelm')
