@@ -58,6 +58,6 @@ class TestGithub(unittest.TestCase):
         allRepos = RepositoryNames('ctelm')
         self.assertEqual(len(allRepos), 0)
 
-if __name__ == '__main__':
-    print("Running unit test")
-    unittest.main()
+#if __name__ == '__main__':
+#    print("Running unit test")
+#    unittest.main()
