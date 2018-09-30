@@ -12,7 +12,7 @@ from unittest.mock import Mock, patch
 class TestGithub(unittest.TestCase):
 
     @patch('TestGitHubAPI.RepositoryNames')
-     def testRepo1(mock_repo_names, self):
+    def testRepo1(mock_repo_names, self):
          mock_repo_names.return_value = Mock(['richkempinski'])
 
          allRepos = RepositoryNames('richkempinski')
