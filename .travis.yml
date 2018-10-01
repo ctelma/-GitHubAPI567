@@ -6,4 +6,4 @@ install:
   - pip install requests
   
 script:
-  - python3 -m unittest TestGitHubAPI
+  - python3 -m unittest TestGitHubAPI_v2
